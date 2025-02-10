@@ -4,13 +4,17 @@
     "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
         "packages": "languageserver,httpgd"
     },
-    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:latest": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
         "installTinyTex": "true"
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": ["reditorsupport.r", "ms-toolsai.jupyter"]
-        }
+    }
+    
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "ms-toolsai.jupyter"
+      ]
     }
   }
 }
