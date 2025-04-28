@@ -1,9 +1,9 @@
 {
   "image": "rocker/binder:latest",
   "features": {
-    "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-        "packages": "languageserver,httpgd"
-    },
+   // "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+   //     "packages": "languageserver,httpgd"
+   // },
     "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
         "installTinyTex": "true"
     }
