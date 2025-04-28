@@ -1,0 +1,45 @@
+---
+title: "Rendered R in GitHub Codespace"
+author: "Liam"
+output: pdf_document
+---
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+# My work
+
+This is where I do all the work. First- libraries.
+
+```{r warning=F, message=F}
+library(dplyr)
+library(ggplot2)
+```
+
+## Arithmetic
+```{r arithmetic}
+2 + 2
+3 + 2
+5 + 2
+```
+
+## Pipe operation
+```{r}
+mtcars %>%
+  head() %>%
+  select(-drat, -qsec, -wt) %>% 
+  knitr::kable(format = "simple", caption="mt cars preview")
+```
+
+## plot
+```{r plot1, fig.cap="mt cars"}
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point() +
+  theme_minimal() +
+  theme(aspect.ratio = 0.8) +
+  labs(title = "Car Weight vs MPG",
+       x = "Weight (1000 lbs)",
+       y = "Miles per Gallon")
+```
