@@ -56,3 +56,6 @@ From top right corner of the opened `notebook.ipynb` file pane.
 ![Select Kernel](images/select_kernel_9.png)
 
 Now `R` should appear at the lower right corner of each code cell to indicate that each code cell is with `R` kernel, and each code cell is runable.
+
+**To render a Jupyter Notebook with R code to a PDF file, click on the `...` and select `export`**
+![Render](images/render_pdf.png)
