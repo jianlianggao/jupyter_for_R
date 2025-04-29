@@ -4,16 +4,23 @@
    // "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
    //     "packages": "languageserver,httpgd"
    // },
-    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:latest": {
         "installTinyTex": "true"
+    },
+    "ghcr.io/devcontainers/features/python": {
+            "version": "3.12", // Or "3.10", "3.12", etc. - Jupyter needs Python
+            "installJupyterlab": true // Installs JupyterLab & Notebook
     }
-    
+      
   },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y wget ca-certificates && wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.554/quarto-1.4.554-linux-amd64.deb && sudo dpkg -i quarto-1.4.554-linux-amd64.deb && rm quarto-1.4.554-linux-amd64.deb && R -e 'install.packages(c(\"dplyr\", \"ggplot2\", \"dtplyr\",\"PerformanceAnalytics\", \"data.table\", \"IRkernel\"), repos=\"https://cloud.r-project.org/\"); IRkernel::installspec(user=FALSE)'",
+
   "customizations": {
     "vscode": {
       "extensions": [
         "REditorSupport.r",
-        "ms-toolsai.jupyter"
+        "ms-toolsai.jupyter",
+        "quarto.quarto"
       ]
     }
   }
