@@ -3,7 +3,7 @@
 **Launch the environment by clicking on the green Code button and creating codespace on main**
 ![Create/Launch Codespaces](images/codespace_create.png)
 
-## Rum R Markdown/Notebook
+## Run R Markdown/Notebook
 
 An example, `test.Rmd`, is ready to try.
 
@@ -12,7 +12,7 @@ An example, `test.Rmd`, is ready to try.
 rmarkdown::render("test.Rmd", output_format="pdf_document")
 ```
 
-## Rum R code in a Jupyter Notebook
+## Run R code in a Jupyter Notebook
 
 Please try `notebook.ipynb`. But setup is required following the 9 steps below.
 
