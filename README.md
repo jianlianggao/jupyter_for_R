@@ -34,24 +34,24 @@ From top right corner of the opened `notebook.ipynb` file pane.
 
 ![Select Kernel](images/select_kernel_4.png)
 
-- Step 5:
+- Step 5: Select `base (Python x.x.x)`
 
 ![Select Kernel](images/select_kernel_5.png)
 
-- Step 6:
+- Step 6: Click on the top right corner button again to select kernel.
 
 ![Select Kernel](images/select_kernel_6.png)
 
-- Step 7:
+- Step 7: Choose `Select Another kernel...` 
 
 ![Select Kernel](images/select_kernel_7.png)
 
-- Step 8:
+- Step 8: Choose `Jupyter Kernel...`
 
 ![Select Kernel](images/select_kernel_8.png)
 
 
-- Step 9:
+- Step 9: Choose `R (base)`
 
 ![Select Kernel](images/select_kernel_9.png)
 
